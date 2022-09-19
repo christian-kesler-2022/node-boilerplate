@@ -1,3 +1,7 @@
-# node-boilerplate
+# Node Boilerplate
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/node-boilerplate)
+## Usecases
+
+Server must have functional login system with profile page (optional: upload custom user avatar)
+
+Server must have app focused layout, with home icon, searchbar, auth icon, filters, content, hotbar, and footer.

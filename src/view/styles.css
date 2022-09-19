@@ -1,0 +1,56 @@
+#layout {
+  width: 100vw;
+  height: 100vh;
+
+  background-color: rgb(255, 0, 234);
+}
+
+/* header row */
+#layout #header {
+  background-color: lightcoral;
+  height: 64px;
+}
+/* header columns */
+#layout #header #nav {
+  width: 16vw;
+  background-color: rgb(255, 0, 0);
+}
+#layout #header #search {
+  /* width: 16vw; */
+  background-color: rgb(0, 255, 0);
+}
+#layout #header #auth {
+  width: 64px;
+  background-color: rgb(0, 0, 255);
+}
+
+/* page row */
+#layout #page {
+  background-color: lightblue;
+}
+/* page columns */
+#layout #page #options {
+  background-color: rgb(255, 255, 0);
+}
+#layout #page #content {
+  background-color: rgb(0, 255, 255);
+}
+#layout #page #hotbar {
+  background-color: rgb(255, 0, 255);
+}
+
+/* footer row */
+#layout #footer {
+  height: 8vh;
+  background-color: lightcyan;
+}
+
+#layout #header #nav,
+#layout #header #search,
+#layout #header #auth,
+#layout #page #options,
+#layout #page #content,
+#layout #page #hotbar,
+#layout #footer td {
+  text-align: center;
+}
