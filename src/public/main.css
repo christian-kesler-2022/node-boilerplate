@@ -35,7 +35,7 @@
 }
 
 #layout #header #search {
-  /* width: 16vw; */
+  width: 68vw;
   background-color: rgb(0, 255, 0);
 }
 #searchfield {
@@ -62,7 +62,6 @@
   background-color: lightgrey;
 }
 #layout #header #auth {
-  width: 64px;
   background-color: rgb(0, 0, 255);
 }
 
@@ -73,12 +72,18 @@
 /* page columns */
 #layout #page #options {
   background-color: rgb(255, 255, 0);
+  vertical-align: top;
+  padding: 16px;
+  padding-left: 0;
 }
 #layout #page #content {
   background-color: rgb(0, 255, 255);
+  vertical-align: top;
+  padding: 16px;
 }
 #layout #page #hotbar {
   background-color: rgb(255, 0, 255);
+  width: 64px;
 }
 
 #layout #page #hotbar a .icon {
