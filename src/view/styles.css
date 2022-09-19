@@ -86,12 +86,6 @@
   margin-bottom: 16px;
 }
 
-/* footer row */
-#layout #footer {
-  height: 64px;
-  background-color: royalblue;
-}
-
 #layout #header #nav,
 #layout #header #search,
 #layout #header #auth,
