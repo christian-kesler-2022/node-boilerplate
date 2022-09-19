@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Node Boilerplate</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <table id="layout">
+      <tbody>
+        <tr id="header">
+          <td id="nav">
+            <div style="display: flex; justify-content: center">
+              <!-- Burger Menu -->
+              <img
+                class="icon"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1024px-Hamburger_icon.svg.png"
+                alt="Burger Menu"
+                style="margin-left: 16px; margin-right: 16px"
+              />
+              <!-- Homepage Link -->
+              <center>
+                <a href="/">
+                  <!-- Replace this with your site logo.  If you want words included, make sure they are part of the image and not text inserted here. -->
+                  <img
+                    id="homeicon"
+                    src="https://upload.wikimedia.org/wikipedia/commons/0/02/Eichh%C3%B6rnchen_D%C3%BCsseldorf_Hofgarten_edit.jpg"
+                    alt="Home Icon"
+                    style="margin-left: 16px; margin-right: 16px"
+                  />
+                </a>
+              </center>
+            </div>
+          </td>
+          <td id="search">
+            <form action="/search" method="GET">
+              <input
+                id="searchfield"
+                name="query"
+                type="text"
+                placeholder="Search"
+              />
+              <input id="searchgo" type="submit" />
+            </form>
+          </td>
+          <td id="auth">Auth Icon</td>
+        </tr>
+
+        <tr id="page">
+          <td id="options">Options</td>
+          <td id="content">Content</td>
+          <td id="hotbar">Hotbar</td>
+        </tr>
+
+        <tr id="footer">
+          <td colspan="3">Footer</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

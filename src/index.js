@@ -3,7 +3,15 @@ var express = require('express');
 var app = express();
 
 app.get('/', function (req, res) {
-  res.sendFile(__dirname + '/view/index.html');
+  res.sendFile(__dirname + '/view/raw.html');
+});
+
+app.get('/raw', function (req, res) {
+  res.sendFile(__dirname + '/view/raw.html');
+});
+
+app.get('/bootstrap', function (req, res) {
+  res.sendFile(__dirname + '/view/bootstrap.html');
 });
 
 app.get('/styles.css', function (req, res) {
