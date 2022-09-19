@@ -2,11 +2,13 @@
   width: 100vw;
   height: 100vh;
   background-color: slateblue;
+  border-collapse: collapse;
 }
 
 .icon {
   height: 48px;
   width: 48px;
+  margin: 4px;
 }
 
 /* header row */
@@ -40,10 +42,10 @@
   height: 48px;
   width: 32vw;
   background: url('https://upload.wikimedia.org/wikipedia/commons/2/22/Google_Magnifying_Glass.svg')
-    no-repeat left 2px;
+    no-repeat 4px 2px;
   padding-left: 48px;
   background-color: white;
-
+  border: 1px solid grey;
   border-bottom-left-radius: 16px;
   border-top-left-radius: 16px;
   margin-right: 0;
@@ -56,8 +58,7 @@
   border-bottom-right-radius: 16px;
   border-top-right-radius: 16px;
   margin-left: -8px;
-  background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Sideways_Arrow_Icon.svg/500px-Sideways_Arrow_Icon.svg.png')
-    no-repeat 0px 2px;
+  border: 1px solid grey;
   background-color: lightgrey;
 }
 #layout #header #auth {
@@ -78,6 +79,11 @@
 }
 #layout #page #hotbar {
   background-color: rgb(255, 0, 255);
+}
+
+#layout #page #hotbar a .icon {
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 /* footer row */
