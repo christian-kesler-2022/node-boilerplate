@@ -11,10 +11,14 @@
   padding: 16px;
   font-weight: bold;
 }
-
+body {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
 #layout {
-  width: 100vw;
+  width: 99vw;
   height: 100vh;
+  margin-right: 1vw;
   background-color: slateblue;
   border-collapse: collapse;
 }

@@ -12,6 +12,10 @@ module.exports = function (app) {
     res.sendFile(__dirname + '/views/raw.html');
   });
 
+  app.get('/data-visualized', function (req, res) {
+    res.sendFile(__dirname + '/views/data-visualized.html');
+  });
+
   app.get('/bootstrap', function (req, res) {
     res.sendFile(__dirname + '/views/bootstrap.html');
   });

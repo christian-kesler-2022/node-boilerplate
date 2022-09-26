@@ -23,15 +23,6 @@
       function hideOptions() {
         document.getElementById('options-bar').style.display = 'none';
       }
-      function toggleOptions() {
-        if (document.getElementById('options-bar').style.display == 'none') {
-          document.getElementById('options-bar').style.display = 'block';
-        } else if (
-          document.getElementById('options-bar').style.display == 'block'
-        ) {
-          document.getElementById('options-bar').style.display = 'none';
-        }
-      }
     </script>
   </head>
   <body>
@@ -44,7 +35,7 @@
         onclick="hideOptions()"
       />
       <br />
-      Account
+      <a href="/data-visualized">Data Visualized</a>
       <hr />
       Search
       <hr />
