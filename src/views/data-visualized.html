@@ -122,31 +122,57 @@
         // document.getElementById('content').innerHTML +=
         //   JSON.stringify(charCount);
         document.getElementById('a').style.width = `${charCount.a}vw`;
+        document.getElementById('a').innerHTML = `${charCount.a}`;
         document.getElementById('b').style.width = `${charCount.b}vw`;
+        document.getElementById('b').innerHTML = `${charCount.b}`;
         document.getElementById('c').style.width = `${charCount.c}vw`;
+        document.getElementById('c').innerHTML = `${charCount.c}`;
         document.getElementById('d').style.width = `${charCount.d}vw`;
+        document.getElementById('d').innerHTML = `${charCount.d}`;
         document.getElementById('e').style.width = `${charCount.e}vw`;
+        document.getElementById('e').innerHTML = `${charCount.e}`;
         document.getElementById('f').style.width = `${charCount.f}vw`;
+        document.getElementById('f').innerHTML = `${charCount.f}`;
         document.getElementById('g').style.width = `${charCount.g}vw`;
+        document.getElementById('g').innerHTML = `${charCount.g}`;
         document.getElementById('h').style.width = `${charCount.h}vw`;
+        document.getElementById('h').innerHTML = `${charCount.h}`;
         document.getElementById('i').style.width = `${charCount.i}vw`;
+        document.getElementById('i').innerHTML = `${charCount.i}`;
         document.getElementById('j').style.width = `${charCount.j}vw`;
+        document.getElementById('j').innerHTML = `${charCount.j}`;
         document.getElementById('k').style.width = `${charCount.k}vw`;
+        document.getElementById('k').innerHTML = `${charCount.k}`;
         document.getElementById('l').style.width = `${charCount.l}vw`;
+        document.getElementById('l').innerHTML = `${charCount.l}`;
         document.getElementById('m').style.width = `${charCount.m}vw`;
+        document.getElementById('m').innerHTML = `${charCount.m}`;
         document.getElementById('n').style.width = `${charCount.n}vw`;
+        document.getElementById('n').innerHTML = `${charCount.n}`;
         document.getElementById('o').style.width = `${charCount.o}vw`;
+        document.getElementById('o').innerHTML = `${charCount.o}`;
         document.getElementById('p').style.width = `${charCount.p}vw`;
+        document.getElementById('p').innerHTML = `${charCount.p}`;
         document.getElementById('q').style.width = `${charCount.q}vw`;
+        document.getElementById('q').innerHTML = `${charCount.q}`;
         document.getElementById('r').style.width = `${charCount.r}vw`;
+        document.getElementById('r').innerHTML = `${charCount.r}`;
         document.getElementById('s').style.width = `${charCount.s}vw`;
+        document.getElementById('s').innerHTML = `${charCount.s}`;
         document.getElementById('t').style.width = `${charCount.t}vw`;
+        document.getElementById('t').innerHTML = `${charCount.t}`;
         document.getElementById('u').style.width = `${charCount.u}vw`;
+        document.getElementById('u').innerHTML = `${charCount.u}`;
         document.getElementById('v').style.width = `${charCount.v}vw`;
+        document.getElementById('v').innerHTML = `${charCount.v}`;
         document.getElementById('w').style.width = `${charCount.w}vw`;
+        document.getElementById('w').innerHTML = `${charCount.w}`;
         document.getElementById('x').style.width = `${charCount.x}vw`;
+        document.getElementById('x').innerHTML = `${charCount.x}`;
         document.getElementById('y').style.width = `${charCount.y}vw`;
+        document.getElementById('y').innerHTML = `${charCount.y}`;
         document.getElementById('z').style.width = `${charCount.z}vw`;
+        document.getElementById('z').innerHTML = `${charCount.z}`;
 
         // document.getElementById('other').style.width = `${charCount.other}vw`;
       }
@@ -169,10 +195,14 @@
       .graph {
         width: 4vw;
         overflow: hidden;
-        height: 32px;
+        height: 10px;
         margin: 0;
         padding: 0;
         display: inline-block;
+        font-size: 10px;
+        color: white;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+          1px 1px 0 #000;
       }
       #a,
       #f,
@@ -312,7 +342,14 @@
             <hr />
             <button onclick="queryAPI()">Populate Data</button>
             <hr />
-            <div style="font-weight: bold; display: block; text-align: left">
+            <div
+              style="
+                font-weight: bold;
+                display: block;
+                text-align: left;
+                font-family: monospace;
+              "
+            >
               A <span id="a" class="graph"></span> <br />
               B <span id="b" class="graph"></span> <br />
               C <span id="c" class="graph"></span> <br />
