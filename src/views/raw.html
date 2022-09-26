@@ -16,8 +16,40 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <script>
+      function showOptions() {
+        document.getElementById('options-bar').style.display = 'block';
+      }
+      function hideOptions() {
+        document.getElementById('options-bar').style.display = 'none';
+      }
+      function toggleOptions() {
+        if (document.getElementById('options-bar').style.display == 'none') {
+          document.getElementById('options-bar').style.display = 'block';
+        } else if (
+          document.getElementById('options-bar').style.display == 'block'
+        ) {
+          document.getElementById('options-bar').style.display = 'none';
+        }
+      }
+    </script>
   </head>
   <body>
+    <div id="options-bar">
+      <img
+        class="icon"
+        src="https://cdn-icons-png.flaticon.com/512/93/93634.png"
+        alt="Hide Options"
+        style="margin-left: 16px; margin-right: 16px; float: right"
+        onclick="hideOptions()"
+      />
+      <br />
+      Account
+      <hr />
+      Search
+      <hr />
+      ETC
+    </div>
     <table id="layout">
       <tbody>
         <tr id="header">
@@ -31,6 +63,7 @@
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1024px-Hamburger_icon.svg.png"
                 alt="Burger Menu"
                 style="margin-left: 16px; margin-right: 16px"
+                onclick="showOptions()"
               />
               <!-- Homepage Link -->
               <center>

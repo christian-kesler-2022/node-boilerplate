@@ -1,3 +1,17 @@
+#options-bar {
+  display: none;
+  position: absolute;
+  left: 0;
+  width: 16vw;
+  height: 100vh;
+  overflow-x: auto;
+  overflow-y: auto;
+  scrollbar-color: red yellow;
+  background-color: rgba(64, 64, 64, 0.96);
+  padding: 16px;
+  font-weight: bold;
+}
+
 #layout {
   width: 100vw;
   height: 100vh;
@@ -9,6 +23,7 @@
   height: 48px;
   width: 48px;
   margin: 4px;
+  cursor: pointer;
 }
 
 /* header row */
